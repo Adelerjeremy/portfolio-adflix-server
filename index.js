@@ -238,7 +238,6 @@ app.get('/expgenesis', function(req, res){
             css4:"moduleLittleCard.css",
             css5:"moduleResponsExpG.css"
         },
-        
         hero: "hero3",
         content: {
             en: {
