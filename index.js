@@ -2,13 +2,19 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
+var path = require('path');
 
 //--WORKPLACE/START-------->
 var port = process.env.PORT || 3000;
+var viewsPath = path.join(__dirname, 'views');
 var app = express();
 
 //--CSS/JS/IMG------------->
 app.use(express.static('public'));
+
+
+console.log('viewsPath', viewsPath);
+app.set('views', viewsPath);
 
 //--ACTIVATE EXTENSIONS----->
 app.engine('handlebars', exphbs({ defaultLayout:'main' }));
