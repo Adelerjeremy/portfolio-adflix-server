@@ -7,13 +7,14 @@ var path = require('path');
 //--WORKPLACE/START-------->
 var port = process.env.PORT || 3000;
 var viewsPath = path.join(__dirname, 'views');
+var publicPath = path.join(__dirname, 'public');
 var app = express();
 
 //--CSS/JS/IMG------------->
-app.use(express.static('public'));
+app.use(express.static(publicPath));
 
 
-console.log('viewsPath', viewsPath);
+// console.log('viewsPath', viewsPath);
 app.set('views', viewsPath);
 
 //--ACTIVATE EXTENSIONS----->
