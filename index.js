@@ -111,6 +111,10 @@ app.get('/profil', function(req, res){
                     textPassions2:"Virtual reality",
                     textPassions3:"Personal development",
                     textPassions4:"Computer design"
+                },
+                titleCaroussel: {
+
+                    textTitleCaroussel1:"CURRENT TRENDS"
                 }
 
             },
@@ -171,6 +175,10 @@ app.get('/expfirst', function(req, res){
                     
                     titleDuration:"Duration:",
                     textDuration:"1 year"
+                },
+                titleCaroussel: {
+
+                    textTitleCaroussel1:"CURRENT TRENDS"
                 }
             },
             fr: {}
@@ -221,6 +229,10 @@ app.get('/expreturn', function(req, res){
                     
                     titleDuration:"Duration:",
                     textDuration:"6 months"
+                },
+                titleCaroussel: {
+
+                    textTitleCaroussel1:"CURRENT TRENDS"
                 }
             },
             fr: {}
@@ -270,6 +282,10 @@ app.get('/expgenesis', function(req, res){
                     
                     titleDuration:"Duration:",
                     textDuration:"9 months"
+                },
+                titleCaroussel: {
+
+                    textTitleCaroussel1:"CURRENT TRENDS"
                 }
             },
             fr: {}
@@ -328,6 +344,10 @@ app.get('/form', function(req, res){
                     
                     titleDuration:"Duration:",
                     textDuration:"Training of 5 months + 3 months of internship"
+                },
+                titleCaroussel: {
+
+                    textTitleCaroussel1:"CURRENT TRENDS"
                 }
             },
             fr: {}
@@ -374,6 +394,10 @@ app.get('/formsecond', function(req, res){
                         textCqpList6:"Cash in transit"                     
                     }
 
+                },
+                titleCaroussel: {
+
+                    textTitleCaroussel1:"CURRENT TRENDS"
                 }
 
             },
@@ -402,6 +426,10 @@ app.get('/stages', function(req, res){
                 title2:"Soon...",
                 seasons: "Secret seasons"
             },
+            titleCaroussel: {
+
+                textTitleCaroussel1:"CURRENT TRENDS"
+            },
             fr: {}
 
         }
@@ -423,6 +451,10 @@ app.get('/soon', function(req, res){
 
                 title:"UPCOMING",
                 title2:"Soon. . .",
+            },
+            titleCaroussel: {
+
+                textTitleCaroussel1:"CURRENT TRENDS"
             },
             fr: {}
 

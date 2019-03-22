@@ -86,6 +86,15 @@
     }
 }
 
+@media (min-width:1300px){
+    header {
+       background-image:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+       url('../img/photo3full.jpg'); 
+       background-position: 100% 55%;
+       background-size: 100%;
+   } 
+
+}
 
 @media (min-width:1600px){
     header {

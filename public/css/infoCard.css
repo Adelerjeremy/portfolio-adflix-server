@@ -77,8 +77,12 @@ button:focus {
 /*--------------*/
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
     visibility: hidden;
+   
 }
-
+.owl-theme .owl-dots, .owl-theme .owl-nav{
+   display: none;
+   visibility: hidden;
+}
 
 
 /*----------------------------*/
