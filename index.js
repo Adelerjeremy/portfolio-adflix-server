@@ -431,11 +431,11 @@ app.get('/stages', function(req, res){
                 tag2: "Gamer",
                 title:"Stages",
                 title2:"Soon...",
-                seasons: "Secret seasons"
-            },
-            titleCaroussel: {
+                seasons: "Secret seasons",
+                titleCaroussel: {
 
-                textTitleCaroussel1:"CURRENT TRENDS"
+                    textTitleCaroussel1:"CURRENT TRENDS"
+                }
             },
             fr: {}
 
@@ -458,10 +458,11 @@ app.get('/soon', function(req, res){
 
                 title:"UPCOMING",
                 title2:"Soon. . .",
-            },
-            titleCaroussel: {
+                titleCaroussel: {
 
-                textTitleCaroussel1:"CURRENT TRENDS"
+                    textTitleCaroussel1:"CURRENT TRENDS"
+
+                }
             },
             fr: {}
 
