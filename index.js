@@ -28,12 +28,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', function(req, res){
     res.render('home',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",
-            css3:"moduleLittleCard.css",
-            css4:"animations.css",
-            css5:"style.css",
-            css6:"moduleResponsIndex.css"
+            css1: "owl.carousel.css",
+            css2: "owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",
+            css5:"moduleLittleCard.css",
+            css6:"animations.css",
+            css7:"style.css",
+            css8:"moduleResponsIndex.css"
+
         },
         content: {
             en: {
@@ -80,6 +83,34 @@ app.get('/contact', function(req, res){
             css4:"animations.css",
             css5:"contact.css",
             css6:"moduleResponsIndex.css"
+        },
+        content: {
+            en: {
+                navbar: {
+
+                    textNavbar1:"Profil",
+                    textNavbar2:"Experiences",
+                    textNavbar3:"Contact",
+                    textNavbar4:"Share"
+                },
+                mobileMenu: {
+
+                    textMobileMenu1:"Profil",
+                    textMobileMenu2:"Experiences",
+                    textMobileMenu3:"Creations",
+                    textMobileMenu4:"Projects",
+                    textMobileMenu5:"Contact"
+                },
+                character: {
+
+                    textCharacter1:"Entrepreneur",
+                    textCharacter2:"Curious",
+                    textCharacter3:"Adventurer",
+                    textCharacter4:"Creative"
+                },
+
+            },
+            fr: {},
         }
     })
 });
@@ -87,11 +118,13 @@ app.get('/contact', function(req, res){
 app.get('/profil', function(req, res){
     res.render('profil',{
         Styles: {
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsProfil.css"
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsProfil.css"
         },
         hero: "heroprofil",
         content: {
@@ -134,11 +167,13 @@ app.get('/profil', function(req, res){
 app.get('/expfirst', function(req, res){
     res.render('exp',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsExpF.css"
+            css1: "owl.carousel.css",
+            css2: "owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsExpF.css",
         },
         hero: "hero",
         content: {
@@ -197,11 +232,13 @@ app.get('/expfirst', function(req, res){
 app.get('/expreturn', function(req, res){
     res.render('expReturn',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsExpS.css"
+            css1: "owl.carousel.css",
+            css2: "owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsExpS.css"
         },
         hero: "hero2",
         content: {
@@ -251,11 +288,13 @@ app.get('/expreturn', function(req, res){
 app.get('/expgenesis', function(req, res){
     res.render('expGenesis',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsExpG.css"
+            css1: "owl.carousel.css",
+            css2: "owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsExpG.css",
         },
         hero: "hero3",
         content: {
@@ -304,11 +343,13 @@ app.get('/expgenesis', function(req, res){
 app.get('/form', function(req, res){
     res.render('form',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsForm.css"
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsForm.css"
         },
         hero: "heroform",
         content: {
@@ -366,11 +407,13 @@ app.get('/form', function(req, res){
 app.get('/formsecond', function(req, res){
     res.render('formSecond',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsForm2.css"
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsForm2.css"
         },
         hero: "heroform2",
         content: {
@@ -417,11 +460,14 @@ app.get('/formsecond', function(req, res){
 app.get('/stages', function(req, res){
     res.render('stages',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsStage.css"
+            css1: "owl.carousel.css",
+            css2: "owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsStage.css"
+
         },
         hero: "herostages",
         content: {
@@ -446,11 +492,14 @@ app.get('/stages', function(req, res){
 app.get('/soon', function(req, res){
     res.render('soon',{
         Styles:{
-            css1:"moduleInfo.css",
-            css2:"moduleCard.css",  
-            css3:"animations.css",
-            css4:"moduleLittleCard.css",
-            css5:"moduleResponsSoon.css"
+            css1: "owl.carousel.css",
+            css2: "owl.theme.default.min.css",
+            css3:"moduleInfo.css",
+            css4:"moduleCard.css",  
+            css5:"animations.css",
+            css6:"moduleLittleCard.css",
+            css7:"moduleResponsSoon.css"
+
         },
         hero: "herosoon",
         content: {
