@@ -2,10 +2,10 @@
     "version": 2,
     "name": "nodejs-express",
     "builds": [
-        {   "src": "*/index.js", 
+        {   "src": "*.js", 
             "use": "@now/node-server",
             "config": { 
-                "maxLambdaSize": "20mb"
+                "maxLambdaSize": "50mb"
                  }}
     ],
     "routes": [
