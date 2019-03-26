@@ -3,7 +3,7 @@
     "name": "nodejs-express",
     "builds": [
         {   "src": "*.js", 
-            "use": "@now/node",
+            "use": "@now/node-server",
             "config": { 
                 "maxLambdaSize": "50mb"
                  }}
