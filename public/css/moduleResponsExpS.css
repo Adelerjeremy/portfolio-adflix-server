@@ -15,7 +15,7 @@
 @media (min-width:768px){
     .hero2{
         background-image:linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 8)),
-        url('../img/creation/bigposter/alien7.jpg'); 
+        url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629875/Portfolio%20Adflix/alien7.jpg'); 
         background-position: 20% 80%;
         background-size: 100%; 
     }

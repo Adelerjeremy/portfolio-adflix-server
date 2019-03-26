@@ -28,8 +28,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', function(req, res){
     res.render('home',{
         Styles:{
-            css1: "owl.carousel.css",
-            css2: "owl.theme.default.min.css",
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
             css3:"moduleInfo.css",
             css4:"moduleCard.css",
             css5:"moduleLittleCard.css",
@@ -42,14 +42,14 @@ app.get('/', function(req, res){
             en: {
                 navbar: {
 
-                    textNavbar1:"Profil",
+                    textNavbar1:"Profile",
                     textNavbar2:"Experiences",
                     textNavbar3:"Contact",
                     textNavbar4:"Share"
                 },
                 mobileMenu: {
 
-                    textMobileMenu1:"Profil",
+                    textMobileMenu1:"Profile",
                     textMobileMenu2:"Experiences",
                     textMobileMenu3:"Creations",
                     textMobileMenu4:"Projects",
@@ -88,14 +88,14 @@ app.get('/contact', function(req, res){
             en: {
                 navbar: {
 
-                    textNavbar1:"Profil",
+                    textNavbar1:"Profile",
                     textNavbar2:"Experiences",
                     textNavbar3:"Contact",
                     textNavbar4:"Share"
                 },
                 mobileMenu: {
 
-                    textMobileMenu1:"Profil",
+                    textMobileMenu1:"Profile",
                     textMobileMenu2:"Experiences",
                     textMobileMenu3:"Creations",
                     textMobileMenu4:"Projects",
@@ -115,8 +115,8 @@ app.get('/contact', function(req, res){
     })
 });
 
-app.get('/profil', function(req, res){
-    res.render('profil',{
+app.get('/profile', function(req, res){
+    res.render('profile',{
         Styles: {
             css1:"owl.carousel.css",
             css2:"owl.theme.default.min.css",
@@ -167,8 +167,8 @@ app.get('/profil', function(req, res){
 app.get('/expfirst', function(req, res){
     res.render('exp',{
         Styles:{
-            css1: "owl.carousel.css",
-            css2: "owl.theme.default.min.css",
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
             css3:"moduleInfo.css",
             css4:"moduleCard.css",  
             css5:"animations.css",
@@ -232,8 +232,8 @@ app.get('/expfirst', function(req, res){
 app.get('/expreturn', function(req, res){
     res.render('expReturn',{
         Styles:{
-            css1: "owl.carousel.css",
-            css2: "owl.theme.default.min.css",
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
             css3:"moduleInfo.css",
             css4:"moduleCard.css",  
             css5:"animations.css",
@@ -288,8 +288,8 @@ app.get('/expreturn', function(req, res){
 app.get('/expgenesis', function(req, res){
     res.render('expGenesis',{
         Styles:{
-            css1: "owl.carousel.css",
-            css2: "owl.theme.default.min.css",
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
             css3:"moduleInfo.css",
             css4:"moduleCard.css",  
             css5:"animations.css",
@@ -460,8 +460,8 @@ app.get('/formsecond', function(req, res){
 app.get('/stages', function(req, res){
     res.render('stages',{
         Styles:{
-            css1: "owl.carousel.css",
-            css2: "owl.theme.default.min.css",
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
             css3:"moduleInfo.css",
             css4:"moduleCard.css",  
             css5:"animations.css",
@@ -492,8 +492,8 @@ app.get('/stages', function(req, res){
 app.get('/soon', function(req, res){
     res.render('soon',{
         Styles:{
-            css1: "owl.carousel.css",
-            css2: "owl.theme.default.min.css",
+            css1:"owl.carousel.css",
+            css2:"owl.theme.default.min.css",
             css3:"moduleInfo.css",
             css4:"moduleCard.css",  
             css5:"animations.css",

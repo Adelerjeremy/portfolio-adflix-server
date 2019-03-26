@@ -212,7 +212,7 @@ body{
     height: 100vh;
 }
 .hero{
-    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster5B.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629827/Portfolio%20Adflix/poster5B.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 
@@ -220,7 +220,7 @@ body{
     z-index: 1;
 }
 .hero2{
-    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster6.1.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553630632/Portfolio%20Adflix/poster6.1.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 
@@ -228,7 +228,7 @@ body{
     z-index: 1;
 }
 .hero3{
-    background-image:linear-gradient(rgba(12, 12, 12, 0.3), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster10.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0.3), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553630739/Portfolio%20Adflix/poster10full.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 
@@ -236,7 +236,7 @@ body{
     z-index: 1;
 }
 .heroform{
-    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster13.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553630662/Portfolio%20Adflix/poster13full.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 
@@ -244,7 +244,7 @@ body{
     z-index: 1;
 }
 .heroform2{
-    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster15.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553630188/Portfolio%20Adflix/poster15.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 
@@ -252,7 +252,7 @@ body{
     z-index: 1;
 }
 .heroprofil{
-    background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster18.3.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629798/Portfolio%20Adflix/poster18.3.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 
@@ -260,7 +260,7 @@ body{
     z-index: 1;
 }
 .herostages{
-    background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster14.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629875/Portfolio%20Adflix/poster14full.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 
@@ -268,7 +268,7 @@ body{
     z-index: 1;
 }
 .herosoon{
-    background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 1)),url('../img/creation/bigposter/poster16.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553630253/Portfolio%20Adflix/poster16full.jpg');
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size:100%; 

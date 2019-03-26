@@ -15,7 +15,7 @@
 @media (min-width:768px){
     .heroprofil{
         background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),
-        url('../img/creation/bigposter/posterit.jpg'); 
+        url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553630026/Portfolio%20Adflix/posterit.jpg'); 
         background-position: center center;
         background-size: 100%; 
     }
