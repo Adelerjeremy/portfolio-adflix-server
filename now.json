@@ -5,10 +5,10 @@
         {   "src": "*.js", 
             "use": "@now/node-server",
             "config": { 
-                "maxLambdaSize": "50mb"
+                "maxLambdaSize": "20mb"
                  }}
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/" }
+        { "src": "/(.*)", "dest": "/index.js" }
     ]
 }
