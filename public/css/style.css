@@ -117,7 +117,7 @@ button:focus {
 /*--------------*/
 
  header{
-    background-image:url('../img/photo3.jpg');
+    background-image:url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629090/Portfolio%20Adflix/photo3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
