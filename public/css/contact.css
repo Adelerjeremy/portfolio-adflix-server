@@ -171,6 +171,13 @@ header{
     animation: texttoright ease-out 1.2s;
 }
 
+.social_media{
+    border:none;
+}
+.social_media a:hover{
+    background-color:#eb0000;
+}
+
 /*-------------------------*/
 /*----BUTTON----*/
 
