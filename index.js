@@ -583,61 +583,61 @@ app.get('/comingsoon', function(req,res){
             js2:"comingsoon.js",
         }
     })
-})
-
-//--NODEMAILER COMING SOON------------->
-app.post('/sendnewsletter', (req, res) => {
-    const output = `
-        <p><span style="color:#eb0000; font-size:1.4em;font-weight:bold;">COMING SOON</span> have send new request</p>
-        <h3>Contact Details</h3>
-        <ul>  
-            <li style="letter-spacing:1.5px; word-spacing:1px;line-height:2em;">Email: <strong> ${req.body.email}</strong></li>
-        </ul>
-    `;
-  
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-      service: "Gmail",
-      auth: {
-          user: 'adeler.jeremy@gmail.com', 
-          pass: 'Pi314159265358979' 
-      },
-      tls:{
-        rejectUnauthorized:false
-      }
-    });
-  
-    // setup email data with unicode symbols
-    let mailOptions = {
-        from: req.body.sender, // sender address
-        to: 'adeler.jeremy@gmail.com', // list of receivers
-        subject: 'ADFLIX Newsletter Request', // Subject line
-        text: 'Hello world?', // plain text body
-        html: output // html body
-    };
-  
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);   
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-  
-        res.render('comingSoon', {
-            msg:'Successful registration',
-            Styles: {
-                css1:"comingSoon.css",
-                css2:"animate.css",
-                css3:"util.css",
-            },
-            Scripts: {
-                js1:"tilt.jquery.min.js",
-                js2:"comingsoon.js",
-            }
-        });
-    });
 });
+
+// //--NODEMAILER COMING SOON------------->
+// app.post('/sendnewsletter', (req, res) => {
+//     const output = `
+//         <p><span style="color:#eb0000; font-size:1.4em;font-weight:bold;">COMING SOON</span> have send new request</p>
+//         <h3>Contact Details</h3>
+//         <ul>  
+//             <li style="letter-spacing:1.5px; word-spacing:1px;line-height:2em;">Email: <strong> ${req.body.email}</strong></li>
+//         </ul>
+//     `;
+  
+//     // create reusable transporter object using the default SMTP transport
+//     let transporter = nodemailer.createTransport({
+//       service: "Gmail",
+//       auth: {
+//           user: 'adeler.jeremy@gmail.com', 
+//           pass: 'Pi314159265358979' 
+//       },
+//       tls:{
+//         rejectUnauthorized:false
+//       }
+//     });
+  
+//     // setup email data with unicode symbols
+//     let mailOptions = {
+//         from: req.body.sender, // sender address
+//         to: 'adeler.jeremy@gmail.com', // list of receivers
+//         subject: 'ADFLIX Newsletter Request', // Subject line
+//         text: 'Hello world?', // plain text body
+//         html: output // html body
+//     };
+  
+//     // send mail with defined transport object
+//     transporter.sendMail(mailOptions, (error, info) => {
+//         if (error) {
+//             return console.log(error);
+//         }
+//         console.log('Message sent: %s', info.messageId);   
+//         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+  
+//         res.render('comingSoon', {
+//             msg:'Successful registration',
+//             Styles: {
+//                 css1:"comingSoon.css",
+//                 css2:"animate.css",
+//                 css3:"util.css",
+//             },
+//             Scripts: {
+//                 js1:"tilt.jquery.min.js",
+//                 js2:"comingsoon.js",
+//             }
+//         });
+//     });
+// });
 
 //--NODEMAILER------------->
 app.post('/send', (req, res) => {
