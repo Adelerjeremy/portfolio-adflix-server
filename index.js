@@ -38,6 +38,12 @@ app.get('/', function(req, res){
             css8:"moduleResponsIndex.css"
 
         },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+            js4:"mobile.js"
+        },
         content: {
             en: {
                 navbar: {
@@ -84,6 +90,12 @@ app.get('/contact', function(req, res){
             css5:"contact.css",
             css6:"moduleResponsIndex.css"
         },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+            js4:"mobile.js"
+        },
         content: {
             en: {
                 navbar: {
@@ -125,6 +137,11 @@ app.get('/profile', function(req, res){
             css5:"animations.css",
             css6:"moduleLittleCard.css",
             css7:"moduleResponsProfil.css"
+        },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
         },
         hero: "heroprofil",
         content: {
@@ -174,6 +191,11 @@ app.get('/expfirst', function(req, res){
             css5:"animations.css",
             css6:"moduleLittleCard.css",
             css7:"moduleResponsExpF.css",
+        },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
         },
         hero: "hero",
         content: {
@@ -240,6 +262,11 @@ app.get('/expreturn', function(req, res){
             css6:"moduleLittleCard.css",
             css7:"moduleResponsExpS.css"
         },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+        },
         hero: "hero2",
         content: {
             en: {
@@ -296,6 +323,11 @@ app.get('/expgenesis', function(req, res){
             css6:"moduleLittleCard.css",
             css7:"moduleResponsExpG.css",
         },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+        },
         hero: "hero3",
         content: {
             en: {
@@ -350,6 +382,11 @@ app.get('/form', function(req, res){
             css5:"animations.css",
             css6:"moduleLittleCard.css",
             css7:"moduleResponsForm.css"
+        },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
         },
         hero: "heroform",
         content: {
@@ -415,6 +452,11 @@ app.get('/formsecond', function(req, res){
             css6:"moduleLittleCard.css",
             css7:"moduleResponsForm2.css"
         },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+        },
         hero: "heroform2",
         content: {
             en: {
@@ -469,6 +511,11 @@ app.get('/stages', function(req, res){
             css7:"moduleResponsStage.css"
 
         },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+        },
         hero: "herostages",
         content: {
             en: {
@@ -501,6 +548,11 @@ app.get('/soon', function(req, res){
             css7:"moduleResponsSoon.css"
 
         },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+        },
         hero: "herosoon",
         content: {
             en: {
@@ -517,6 +569,74 @@ app.get('/soon', function(req, res){
 
         }
     })
+});
+
+app.get('/comingsoon', function(req,res){
+    res.render('comingSoon', {
+        Styles: {
+            css1:"comingSoon.css",
+            css2:"animate.css",
+            css3:"util.css",
+        },
+        Scripts: {
+            js1:"tilt.jquery.min.js",
+            js2:"comingSoon.js",
+        }
+    })
+})
+
+//--NODEMAILER COMING SOON------------->
+app.post('/sendnewsletter', (req, res) => {
+    const output = `
+        <p><span style="color:#eb0000; font-size:1.4em;font-weight:bold;">COMING SOON</span> have send new request</p>
+        <h3>Contact Details</h3>
+        <ul>  
+            <li style="letter-spacing:1.5px; word-spacing:1px;line-height:2em;">Email: <strong> ${req.body.email}</strong></li>
+        </ul>
+    `;
+  
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+      service: "Gmail",
+      auth: {
+          user: 'adeler.jeremy@gmail.com', 
+          pass: 'Pi314159265358979' 
+      },
+      tls:{
+        rejectUnauthorized:false
+      }
+    });
+  
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: req.body.sender, // sender address
+        to: 'adeler.jeremy@gmail.com', // list of receivers
+        subject: 'ADFLIX Newsletter Request', // Subject line
+        text: 'Hello world?', // plain text body
+        html: output // html body
+    };
+  
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);   
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+  
+        res.render('comingSoon', {
+            msg:'Successful registration',
+            Styles: {
+                css1:"comingSoon.css",
+                css2:"animate.css",
+                css3:"util.css",
+            },
+            Scripts: {
+                js1:"tilt.jquery.min.js",
+                js2:"comingSoon.js",
+            }
+        });
+    });
 });
 
 //--NODEMAILER------------->
@@ -566,7 +686,7 @@ app.post('/send', (req, res) => {
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
   
         res.render('contact', {
-            msg:'Email bien envoyé',
+            msg:'Message correctly sent',
             Styles:{
                 css1:"moduleInfo.css",
                 css2:"moduleCard.css",
@@ -574,7 +694,13 @@ app.post('/send', (req, res) => {
                 css4:"animations.css",
                 css5:"contact.css",
                 css6:"moduleResponsIndex.css"
-            }
+            },
+            Scripts: {
+                js1:"owl.carousel.min.js",
+                js2:"pagetransitions.js",
+                js3:"main.js",
+                js4:"mobile.js"
+            },
         });
     });
 });
