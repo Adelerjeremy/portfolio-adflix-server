@@ -39,11 +39,10 @@ app.get('/', function(req, res){
 
         },
         Scripts: {
-            js1:"jquery.min.js",
-            js2:"owl.carousel.min.js",
-            js3:"pagetransitions.js",
-            js4:"main.js",
-            js5:"mobile.js"
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+            js4:"mobile.js"
         },
         content: {
             en: {
@@ -92,11 +91,10 @@ app.get('/contact', function(req, res){
             css6:"moduleResponsIndex.css"
         },
         Scripts: {
-            js1:"jquery.min.js",
-            js2:"owl.carousel.min.js",
-            js3:"pagetransitions.js",
-            js4:"main.js",
-            js5:"mobile.js"
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
+            js4:"mobile.js"
         },
         content: {
             en: {
@@ -141,10 +139,9 @@ app.get('/profile', function(req, res){
             css7:"moduleResponsProfil.css"
         },
         Scripts: {
-            js1:"jquery.min.js",
-            js2:"owl.carousel.min.js",
-            js3:"pagetransitions.js",
-            js4:"main.js",
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
         },
         hero: "heroprofil",
         content: {
@@ -196,10 +193,9 @@ app.get('/expfirst', function(req, res){
             css7:"moduleResponsExpF.css",
         },
         Scripts: {
-            js1:"jquery.min.js",
-            js2:"owl.carousel.min.js",
-            js3:"pagetransitions.js",
-            js4:"main.js",
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"main.js",
         },
         hero: "hero",
         content: {
