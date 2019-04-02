@@ -4,7 +4,7 @@
   "description": "Premiere version exploitable et maintenable",
   "main": "index.js",
   "scripts": {
-    "start":"node index",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adeler Jeremy",
@@ -13,6 +13,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "nodemailer": "^5.1.1"
+    "nodemailer": "^5.1.1",
+    "now": "^15.0.1"
   }
 }
