@@ -580,7 +580,7 @@ app.get('/comingsoon', function(req,res){
         },
         Scripts: {
             js1:"tilt.jquery.min.js",
-            js2:"comingSoon.js",
+            js2:"comingsoon.js",
         }
     })
 })
@@ -633,7 +633,7 @@ app.post('/sendnewsletter', (req, res) => {
             },
             Scripts: {
                 js1:"tilt.jquery.min.js",
-                js2:"comingSoon.js",
+                js2:"comingsoon.js",
             }
         });
     });
