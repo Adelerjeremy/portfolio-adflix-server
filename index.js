@@ -39,10 +39,11 @@ app.get('/', function(req, res){
 
         },
         Scripts: {
-            js1:"owl.carousel.min.js",
-            js2:"pagetransitions.js",
-            js3:"main.js",
-            js4:"mobile.js"
+            js1:"jquery.min.js",
+            js2:"owl.carousel.min.js",
+            js3:"pagetransitions.js",
+            js4:"main.js",
+            js5:"mobile.js"
         },
         content: {
             en: {
@@ -91,10 +92,11 @@ app.get('/contact', function(req, res){
             css6:"moduleResponsIndex.css"
         },
         Scripts: {
-            js1:"owl.carousel.min.js",
-            js2:"pagetransitions.js",
-            js3:"main.js",
-            js4:"mobile.js"
+            js1:"jquery.min.js",
+            js2:"owl.carousel.min.js",
+            js3:"pagetransitions.js",
+            js4:"main.js",
+            js5:"mobile.js"
         },
         content: {
             en: {
@@ -139,9 +141,10 @@ app.get('/profile', function(req, res){
             css7:"moduleResponsProfil.css"
         },
         Scripts: {
-            js1:"owl.carousel.min.js",
-            js2:"pagetransitions.js",
-            js3:"main.js",
+            js1:"jquery.min.js",
+            js2:"owl.carousel.min.js",
+            js3:"pagetransitions.js",
+            js4:"main.js",
         },
         hero: "heroprofil",
         content: {
@@ -193,9 +196,10 @@ app.get('/expfirst', function(req, res){
             css7:"moduleResponsExpF.css",
         },
         Scripts: {
-            js1:"owl.carousel.min.js",
-            js2:"pagetransitions.js",
-            js3:"main.js",
+            js1:"jquery.min.js",
+            js2:"owl.carousel.min.js",
+            js3:"pagetransitions.js",
+            js4:"main.js",
         },
         hero: "hero",
         content: {
@@ -585,59 +589,59 @@ app.get('/comingsoon', function(req,res){
     })
 });
 
-// //--NODEMAILER COMING SOON------------->
-// app.post('/sendnewsletter', (req, res) => {
-//     const output = `
-//         <p><span style="color:#eb0000; font-size:1.4em;font-weight:bold;">COMING SOON</span> have send new request</p>
-//         <h3>Contact Details</h3>
-//         <ul>  
-//             <li style="letter-spacing:1.5px; word-spacing:1px;line-height:2em;">Email: <strong> ${req.body.email}</strong></li>
-//         </ul>
-//     `;
+//--NODEMAILER COMING SOON------------->
+app.post('/sendnewsletter', (req, res) => {
+    const output = `
+        <p><span style="color:#eb0000; font-size:1.4em;font-weight:bold;">COMING SOON</span> have send new request</p>
+        <h3>Contact Details</h3>
+        <ul>  
+            <li style="letter-spacing:1.5px; word-spacing:1px;line-height:2em;">Email: <strong> ${req.body.email}</strong></li>
+        </ul>
+    `;
   
-//     // create reusable transporter object using the default SMTP transport
-//     let transporter = nodemailer.createTransport({
-//       service: "Gmail",
-//       auth: {
-//           user: 'adeler.jeremy@gmail.com', 
-//           pass: 'Pi314159265358979' 
-//       },
-//       tls:{
-//         rejectUnauthorized:false
-//       }
-//     });
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+      service: "Gmail",
+      auth: {
+          user: 'adeler.jeremy@gmail.com', 
+          pass: 'Pi314159265358979' 
+      },
+      tls:{
+        rejectUnauthorized:false
+      }
+    });
   
-//     // setup email data with unicode symbols
-//     let mailOptions = {
-//         from: req.body.sender, // sender address
-//         to: 'adeler.jeremy@gmail.com', // list of receivers
-//         subject: 'ADFLIX Newsletter Request', // Subject line
-//         text: 'Hello world?', // plain text body
-//         html: output // html body
-//     };
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: req.body.sender, // sender address
+        to: 'adeler.jeremy@gmail.com', // list of receivers
+        subject: 'ADFLIX Newsletter Request', // Subject line
+        text: 'Hello world?', // plain text body
+        html: output // html body
+    };
   
-//     // send mail with defined transport object
-//     transporter.sendMail(mailOptions, (error, info) => {
-//         if (error) {
-//             return console.log(error);
-//         }
-//         console.log('Message sent: %s', info.messageId);   
-//         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);   
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
   
-//         res.render('comingSoon', {
-//             msg:'Successful registration',
-//             Styles: {
-//                 css1:"comingSoon.css",
-//                 css2:"animate.css",
-//                 css3:"util.css",
-//             },
-//             Scripts: {
-//                 js1:"tilt.jquery.min.js",
-//                 js2:"comingsoon.js",
-//             }
-//         });
-//     });
-// });
+        res.render('comingSoon', {
+            msg:'Successful registration',
+            Styles: {
+                css1:"comingSoon.css",
+                css2:"animate.css",
+                css3:"util.css",
+            },
+            Scripts: {
+                js1:"tilt.jquery.min.js",
+                js2:"comingsoon.js",
+            }
+        });
+    });
+});
 
 //--NODEMAILER------------->
 app.post('/send', (req, res) => {
