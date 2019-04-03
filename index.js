@@ -574,7 +574,7 @@ app.get('/soon', function(req, res){
 // app.get('/comingsoon', function(req,res){
 //     res.render('comingSoon', {
 //         Styles: {
-//             css1:"comingSoon.css",
+//             css1:"comingsoon.css",
 //             css2:"animate.css",
 //             css3:"util.css",
 //         },
@@ -627,7 +627,7 @@ app.get('/soon', function(req, res){
 //         res.render('comingSoon', {
 //             msg:'Successful registration',
 //             Styles: {
-//                 css1:"comingSoon.css",
+//                 css1:"comingsoon.css",
 //                 css2:"animate.css",
 //                 css3:"util.css",
 //             },
