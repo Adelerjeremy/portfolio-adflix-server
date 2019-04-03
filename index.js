@@ -571,19 +571,19 @@ app.get('/soon', function(req, res){
     })
 });
 
-// app.get('/comingsoon', function(req,res){
-//     res.render('comingSoon', {
-//         Styles: {
-//             css1:"comingsoon.css",
-//             css2:"animate.css",
-//             css3:"util.css",
-//         },
-//         Scripts: {
-//             js1:"tilt.jquery.min.js",
-//             js2:"comingsoon.js",
-//         }
-//     })
-// });
+app.get('/comingsoon', function(req,res){
+    res.render('comingSoon', {
+        Styles: {
+            css1:"comingsoon.css",
+            css2:"animate.css",
+            css3:"util.css",
+        },
+        Scripts: {
+            js1:"tilt.jquery.min.js",
+            js2:"comingsoon.js",
+        }
+    })
+});
 
 //--NODEMAILER COMING SOON------------->
 // app.post('/sendnewsletter', (req, res) => {
