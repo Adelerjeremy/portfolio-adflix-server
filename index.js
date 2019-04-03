@@ -572,13 +572,13 @@ app.get('/soon', function(req, res){
 });
 
 app.get('/comingsoon', function(req, res){
-    res.render('comingSoon', {
-        Styles: {
-            css1:"comingsoon.css",
-            css2:"animate.css",
-            css3:"util.css",
+    res.render('comingSoon',{
+        Styles:{              
+            css1:"animate.css",
+            css2:"util.css",
+            css3:"comingsoon.css"
         },
-        Scripts: {
+        Scripts:{
             js1:"tilt.jquery.min.js",
             js2:"comingsoon.js",
         }
