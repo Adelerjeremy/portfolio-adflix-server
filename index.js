@@ -1,27 +1,27 @@
-// var express = require('express');
-// var exphbs = require('express-handlebars');
-// var bodyParser = require('body-parser');
-// var nodemailer = require("nodemailer");
-// var path = require('path');
+var express = require('express');
+var exphbs = require('express-handlebars');
+var bodyParser = require('body-parser');
+var nodemailer = require("nodemailer");
+var path = require('path');
 
-// //--WORKPLACE/START-------->
-// var port = process.env.PORT || 3000;
-// var isProd = process.env.PORT ? true : false;
-// var viewsPath = path.join(__dirname, 'views');
-// var publicPath = path.join(__dirname, 'public');
-// var app = express();
+//--WORKPLACE/START-------->
+var port = process.env.PORT || 3000;
+var isProd = process.env.PORT ? true : false;
+var viewsPath = path.join(__dirname, 'views');
+var publicPath = path.join(__dirname, 'public');
+var app = express();
 
-// //--CSS/JS/IMG------------->
-// app.use(express.static(publicPath));
+//--CSS/JS/IMG------------->
+app.use(express.static(publicPath));
 
 
-// // console.log('viewsPath', viewsPath);
-// app.set('views', viewsPath);
+// console.log('viewsPath', viewsPath);
+app.set('views', viewsPath);
 
-// //--ACTIVATE EXTENSIONS----->
-// app.engine('handlebars', exphbs({ defaultLayout:'main' }));
-// app.set('view engine', 'handlebars');
-// app.use(bodyParser.urlencoded({ extended: false }));
+//--ACTIVATE EXTENSIONS----->
+app.engine('handlebars', exphbs({ defaultLayout:'main' }));
+app.set('view engine', 'handlebars');
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // //----------------------->
 // //--ROUTING---------------->
@@ -707,22 +707,44 @@
 //     });
 // });
 
-// //--PLAYGROUND------------->
-// app.listen(port, function() {
-//     console.log('Server start on port ', port);
-// });
-
-var express = require('express');
-var  port = process.env.PORT || 3000;
-
-var app = express();
-
-app.get('/', function(req, res) {
-    res.send("Hello it's Jeremy")
-});
-
+//--PLAYGROUND------------->
 app.listen(port, function() {
     console.log('Server start on port ', port);
 });
 
-module.exports = app;
+// var express = require('express');
+// var isProd = process.env.PORT ? true  : false;
+// var port = process.env.PORT || 3000;
+// var Logger = require('logdna');
+// var apikey = "91464401011225a314206946be9b6e44";
+// var options = {
+//     hostname: isProd ? 'nodejs-express.adelerjeremy.now.sh' : 'localhost',
+//     envName: isProd ? 'PROD' : 'DEV'
+// };
+
+// options.index_meta = true;
+// // options.tags = ['logging', 'nodejs', 'logdna'];
+// var logger = Logger.setupDefaultLogger(apikey, options);
+
+
+// var app = express();
+
+// logger.log('>> 1#START');
+
+// app.get('/', function(req, res) {
+//     res.send("Hello it's Jeremy 2")
+//     logger.log('2#app.get');
+// });
+
+// app.listen(port, function() {
+
+//     logger.log('2#app.listen : ok');
+
+//     console.log('Server start on port ', port);
+// });
+
+// logger.log('<< 1#END');
+
+// module.exports = app;
+
+

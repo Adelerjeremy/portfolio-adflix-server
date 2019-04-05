@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "node-express",
+    "name": "nodejs-express",
     "builds": [
         { "src": "**/*.js", "use": "@now/node-server" }
     ]
