@@ -724,3 +724,5 @@ app.get('/', function(req, res) {
 app.listen(port, function() {
     console.log('Server start on port ', port);
 });
+
+module.exports = app;

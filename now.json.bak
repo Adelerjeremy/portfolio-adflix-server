@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "name": "nodejs-express",
+    "alias": ["adelerjeremy.com"],
+    "builds": [
+        {   "src": "*.js", 
+            "use": "@now/node-server",
+            "config": { 
+                "maxLambdaSize": "50mb"
+            }
+        },
+        {"src": "/public/**", "use": "@now/static"}
+    ],
+    "routes": [
+        {"src": "/public/(.*)", "dest": "/$1"},
+        { "src": "/(.*)", "dest": "/index.js" }
+    ]
+}
