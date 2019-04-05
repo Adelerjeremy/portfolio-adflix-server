@@ -1,0 +1,73 @@
+{{> headerHome}}
+
+  <div class="container block_contact">
+       
+            <div class="col-12 textTopForm pt-page-moveFromRightFade">
+                <h2 class="pb-4 pl-4 pl-md-0">Contact</h2> 
+                <p class="pl-4 pl-md-0">Would you like to know more about me? Know my availability... Leave me your message and I will get back to you as soon as possible.</p> 
+                <h4 class="pl-4 pl-md-0" style="color:#eb0000;font-weight:bold;">{{msg}}</h4>
+            </div>
+
+            <div class="col-12">
+                <form class="formulaire d-md-none" method="POST" action="/send">
+                        <div class="form-group col-12 col-md-6 pt-page-moveFromRight pt-page-delay100">
+                            <label for="textName4">Name</label>
+                            <input type="text" class="form-control" id="textName4" placeholder="name" name="name">
+                        </div>
+                        <div class="form-group col-12 col-md-6 pt-page-moveFromRight pt-page-delay200">
+                            <label for="textCompany4">Company</label>
+                            <input type="text" class="form-control" id="textCompany4" placeholder="company" name="company">
+                        </div>
+
+                        <div class="form-group col-12 col-md-6 pt-page-moveFromRight pt-page-delay400">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="email" name="email">
+                        </div>
+                        <div class="form-group col-12 col-md-6 pt-page-moveFromRight pt-page-delay500">
+                            <label for="inputPhone">Phone</label>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="phone"  name="phone">
+                        </div>
+                    
+                    <div class="form-group col-12 pt-page-moveFromRight pt-page-delay700">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre message..." name="message" rows="3"></textarea>
+                    </div>
+                    <div class="col-12  pt-page-moveFromRight pt-page-delay1000">
+                        <button id="sendBtn" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        
+
+            <form class="formulaire d-none d-md-block" method="POST" action="/send">
+              <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="textName4">Name</label>
+                        <input type="text" class="form-control" id="textName4" placeholder="name" name="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="textCompany4">Company</label>
+                        <input type="text" class="form-control" id="textCompany4" placeholder="company" name="company">
+                    </div>
+                </div>
+                    <div class="row">
+                    <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="email" name="email">
+                    </div>      
+                    <div class="form-group col-md-6">
+                        <label for="inputPhone">Phone</label>
+                        <input type="text" class="form-control"  id="inputPhone" placeholder="phone"  name="phone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre message..." name="message" rows="3"></textarea>
+                    </div>
+                </div> 
+
+            <button id="sendBtn" type="submit" class="btn btn-primary">Submit</button>      
+        </form>
+
+{{> menuMobile}}  

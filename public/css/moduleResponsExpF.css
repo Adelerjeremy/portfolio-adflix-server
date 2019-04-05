@@ -1,0 +1,51 @@
+/*----------------------------*/
+/**---------RESPONSIVE---------*/
+/*----------------------------*/
+
+@media (min-width:500px){
+
+
+}
+
+@media (min-width:576px){
+
+
+}
+
+@media (min-width:768px){
+    .hero{
+        background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 8)),
+        url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629986/Portfolio%20Adflix/poster7.jpg'); 
+        background-position: center center;
+        background-size: 100%; 
+    }
+
+    .block_center{
+        position: relative;
+        bottom: 5em;
+    }
+
+    .block_md_3_icons{
+        position: relative;
+        top:50%;
+    }
+
+  
+}
+
+
+@media (min-width:992px){
+
+
+
+}
+
+@media (min-width:1200px){
+
+}
+
+
+@media (min-width:1600px){
+
+
+}
