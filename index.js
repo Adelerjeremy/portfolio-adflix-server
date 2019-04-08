@@ -402,7 +402,7 @@ app.get('/form', function(req, res){
                 tag1:"Ambitious",
                 tag2: "Punctual",
                 title:"FORMATIONS",
-                title2:"Web developer and mobile application",
+                title2:"Developer web and application",
                 seasons: "Seasons",
                 technology: {
 

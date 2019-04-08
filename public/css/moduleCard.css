@@ -533,15 +533,18 @@ hr{
     padding:20px;
     width:100%;
     height:72%;
-    bottom: -270px;
+    bottom: -350px;
     left:0;
     box-sizing: border-box;
     transition: 0.5s;
     z-index:2;
 }  
+.detailssoon img {
+    width: 21em;
+}
 
 .card:hover .detailssoon{
-    bottom:140px;
+    bottom:0px;
 } 
 
 .detailssoon h2{

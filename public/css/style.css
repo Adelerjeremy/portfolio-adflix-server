@@ -160,9 +160,24 @@ button:focus {
 }
 
 /*-----NAVBAR----*/
+
+/*--LOGO--*/
+
 .navbar img{
-    width: 5em;
+    width: 3em;
 }
+@media (min-width:576px) {
+    .navbar img{
+        width: 4em;
+    }
+}
+@media (min-width:768px) {
+    .navbar img{
+        width: 5em;
+    }
+}
+/*----------------*/
+
 .navbar-toggler{
     border:none;
 }
