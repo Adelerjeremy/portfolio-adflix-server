@@ -22,6 +22,7 @@ button:focus {
     outline: 0 !important;
 }
 
+/*--------[B A C K : I C O N S]--------*/
 .small_icons{
     position: static;
 }
@@ -171,6 +172,7 @@ body{
 .overview{
     height: 100vh;
 }
+
 .hero{
     background-image:linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629827/Portfolio%20Adflix/poster5B.jpg');
     background-repeat: no-repeat;
@@ -235,6 +237,24 @@ body{
     height:18em;
     z-index: 1;
 }
+.heroprojects{
+    background-image:linear-gradient(rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1560518490/Portfolio%20Adflix/Projects/texture_dark_red_flou_cruePlus_extra.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size:100%; 
+    height:22em;
+    z-index: 1;
+}
+
+.heroadstream{
+    background-image:linear-gradient(rgba(12, 12, 12, 0.1), rgba(12, 12, 12, 1)),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1560789691/Portfolio%20Adflix/Projects/Netflix_logo_Player.gif');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size:100%; 
+    height:22em;
+    z-index: 1;
+}
+
 
 
 

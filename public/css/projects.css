@@ -1,0 +1,417 @@
+/*--------------*/
+/*---GLOBAL---*/
+/*--------------*/
+*{
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #0c0c0c;
+}
+
+p,h1,h2,h3,h4,a,li{
+    color:white;
+}
+
+h5{
+    color:#5fb950;
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+/*----------------------------------------*/
+/*--------[ T I T L E ]----------*/
+/*-------------------------------------*/
+.header__title__projects{
+    position: relative;
+    top: -250px;
+}
+.header__title__projects img{
+    width: 20em;
+}
+
+/*----------------------------------------*/
+/*--------[ D E S C R I P T I O N ]----------*/
+/*-------------------------------------*/
+.description__projects{
+    position: relative;
+    top: -280px;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------[ B O X : A D S T R E A M ]------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.box__adflix-mobile{
+    position: relative;
+    top: -180px;
+    height: 10em;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    background-color: #0c0c0c; 
+    border-right: 2px solid #eb0000a1;
+}
+.box__adflix-mobile a{
+    text-decoration: none;
+}
+
+
+/*-------[ A N I M A T I O N ] --------*/
+.box__adflix-mobile:hover::before,
+.box__adflix-mobile:hover::after {
+    content:"";
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(45deg,#111111,#ff0000,#eb0000,#eb000040,#eb000020,#eb000000,#111111,#ff0000,#eb0000,#eb000040,#eb000020,#eb000000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.box__adflix-mobile::after{
+    filter: blur(20px);
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+
+}
+
+/*--------[ B O X : C A R D ]----------*/
+.box__adflix-mobile:hover{
+    background-color: #111111;
+    border-right:none;
+}
+
+.box__card__adflix-mobile{
+    display: flex;
+}
+
+/*--------[ B O X : I M G ]----------*/
+.box__card__img__adflix-mobile {
+    order: 1;
+    position: relative;
+    left:-15px; 
+}
+.box__card__img__adflix-mobile img{
+    position: relative;
+    bottom: 28px; 
+    width: 15.7em;
+    height: 100%;
+}
+
+/*--------[ B O X : C O N T E N T ]----------*/
+.box__card__content__adflix-mobile{
+    order:2;
+    position: relative;
+    right:15%;   
+}
+
+.box__card__content__adflix-mobile h4{
+   color: #eb0000a1;
+
+}
+
+.box__adflix-mobile:hover .box__card__content__adflix-mobile h4{
+    color: #eb0000;
+}
+
+.box__card__content__adflix-mobile p{
+    color: #fafafa;
+    font-size: 16px;
+ }
+
+ 
+/*------------------------------------------------------------------------------------------------*/
+/*-----------------------------------[ B O X : B E A T S Y ]--------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+
+.box__beatsy{
+    position: relative;
+    top: -150px;
+    height: 10em;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    background-color: #0c0c0c; 
+    border-right: 2px solid #eb0000a1;
+}
+.box__beatsy a{
+    text-decoration: none;
+}
+
+
+/*-------[ A N I M A T I O N ] --------*/
+.box__beatsy:hover::before,
+.box__beatsy:hover::after {
+    content:"";
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(45deg,#111111,#ff0000,#eb0000,#eb000040,#eb000020,#eb000000,#111111,#ff0000,#eb0000,#eb000040,#eb000020,#eb000000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.box__beatsy::after{
+    filter: blur(20px);
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+
+}
+
+/*--------[ B O X : C A R D ]----------*/
+.box__beatsy:hover{
+    background-color: #111111;
+    border-right:none;
+}
+
+.box__card__beatsy{
+    display: flex;
+}
+
+/*--------[ B O X : I M G ]----------*/
+.box__card__img__beatsy {
+    order: 1;
+    position: relative;
+    left:-15px; 
+    top: 7.4px;
+}
+.box__card__img__beatsy img{
+    position: relative;
+    bottom: 28px; 
+    width: 16.50em;
+    height: 100%;
+}
+
+/*--------[ B O X : C O N T E N T ]----------*/
+.box__card__content__beatsy{
+    order:2;
+    position: relative;
+    right:15%;   
+}
+
+.box__card__content__beatsy h4{
+   color: #eb0000a1;
+
+}
+
+.box__beatsy:hover .box__card__content__beatsy h4{
+    color: #eb0000;
+}
+
+.box__card__content__beatsy p{
+    color: #fafafa;
+    font-size: 16px;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*--------------------------- [ A D S T R E A M ] -------------------------------*/
+/*-------------------------------------------------------------------------------*/
+.body{
+    position: relative;
+    top: -110px;
+}
+
+
+/*-------[  G R A D I E N T : A D S T R E A M  ]---------*/
+.block__gradient{
+    position: relative;
+    top:-420px;
+    background:linear-gradient(transparent,rgba(12,12,12,0.4), rgba(12,12,12,1));
+    height:22em;
+    z-index: 2;
+}
+
+/*-------[  H E A D E R : A D S T R E A M  ]---------*/
+.header__title img{
+    width: 18em;
+}
+.header__title-original img {
+    width:16em;
+}
+.header__title-present img {
+    width: 10em;
+}
+
+
+/*---------------------------------------------------------------*/
+/*-------[  P R E S E N T A T I O N : A D S T R E A M  ]---------*/
+/*---------------------------------------------------------------*/
+
+
+/*-------[  B L O C K - 1  ]---------*/
+.presentation__block-1__overview{
+    height:100vh;
+    width: 100vw;
+}
+
+.presentation__block-1 {
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    z-index:2;
+}
+.presentation__block-1__title img {
+    width: 12em;
+}
+.presentation__block-1__text p {
+    color:#fafafa;
+}
+.presentation__block-1__img-review {
+    position: relative;
+    top:-100px;
+    width:100%;
+    overflow: hidden;
+}
+.presentation__block-1__img img {
+    position: relative;
+    left:-250px;
+    top:-100px;
+    width: 40em; 
+}
+.presentation__block-1__review{
+    align-self: center;
+    position: relative;
+    top:-80px;
+    line-height: 35px;
+}
+.presentation__block-1__review h3 {
+    color: #1b1b1b;
+}
+.presentation__block-1__review ul li {
+    color: #1b1b1b;
+}
+
+.presentation__block-1__review span{
+    font-size: 28px;
+    color:#eb0000bb;
+}
+
+.presentation__block-1__background{
+    position: relative;
+    top:50px;
+    background-color:rgba(250, 250, 250, 1);
+    height:300px;
+    width:100%;
+    z-index:1;
+}
+
+
+/*--------------[  B L O C K - 2  ]--------------*/
+.presentation__block-2__overview{
+    height:100vh;
+    width: 100vw;
+}
+.presentation__block-2__title{
+    position: relative;
+    top:200px;
+}
+
+.presentation__block-2__title span {
+    color:#007fd4;
+}
+/* .presentation__block-2__img-review{
+    width:100%;
+    overflow: hidden;
+} */
+
+.presentation__block-2__img{
+    position: relative;
+    left:-200px;
+    top:-425px;
+}
+
+.presentation__block-2__img img {
+    width: 60em; 
+}
+
+.presentation__block-2__background{
+    position: relative;
+    top:180px;
+    height: 480px;
+}
+
+.box__glow{
+    position: absolute;
+    top: 240px;
+    left: 80px;
+    width: 37.6em; 
+    height: 290px;
+    border-radius: 50px;
+    background-color: #0c0c0c; 
+    border-right: 2px solid #eb0000a1;
+}
+/*-------[ A N I M A T I O N ] --------*/
+.box__glow:hover::before,
+.box__glow:hover::after {
+    content:"";
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    border-radius: 50px;
+    background: linear-gradient(-45deg,#111111,#1e90ff,#18dcff,#18dcff40,#18dcff20,#18dcff00,#111111,#1e90ff,#18dcff,#18dcff40,#18dcff20,#18dcff00);
+    background-size: 400%;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.box__glow::after{
+    filter: blur(40px);
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+
+}

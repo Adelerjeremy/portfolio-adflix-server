@@ -1,0 +1,157 @@
+/*----------------------------------------------------------------------------------*/
+/**-------------------[ R E S P O N S I V E : P R O J E C T S ]--------------------*/
+/*--------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------*/
+/*----------[ A D S T R E A M ]---------*/
+/*--------------------------------------*/
+@media (max-width: 460px) {
+    .contentBoxPosters h1 {
+        position: relative;
+        top: -200px;
+    }
+    
+    .sec2 .carouselBox {
+        position: relative;
+        top: -480px;
+    }
+    .sec2 .carousel_Content {
+        position: relative;
+        top: -520px;
+    }
+    /*--------------[ S E C T I O N : B E A U T Y ]-------------*/
+    .beauty_mobile{
+        position: relative;
+        top: 50px;
+        /* left: 80px; */
+        height: 300px;
+        width: 100%;
+        border-radius: 0 10px 10px 0; 
+        background: none; 
+    }
+    @keyframes animate 
+{
+    0%
+    {
+        background-position: 0 0;
+        filter: blur(30px);
+     
+    }
+    50%
+    {
+        background-position: 300% 0;
+        filter: blur(30px);
+        z-index:2;
+    }
+    100%
+    {
+        background-position: 0 0;
+        filter: blur(15px);
+    
+    }
+
+}
+    
+    .beauty_mobile_box__img {
+        position: relative;
+        top: -5px;
+        left: 80px;
+        z-index: 10;
+    }
+    .beauty_mobile_box__img img{
+        position: relative;
+        right: 400px;; 
+        width: 180%;
+        height: 100%;
+    }
+    .beauty_mobile_box__img_content{
+        position: absolute;
+        top: -5px;
+        z-index: 12;
+       
+    }
+    .beauty_mobile_box__img_content img {
+        position: relative;
+        top: 18px;
+        right: -8px; 
+        width: 72%;
+        height: 100%;
+        border-radius: 0 56px 12px 0; 
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width:768px){
+ 
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }  
+   
+
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    } 
+
+    .banner {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+
+    .headerText h1 {
+        font-size: 2rem;
+    }
+
+    .contentBoxPosters h1,
+    .sec2 h1 {
+        font-size: 2rem;
+    }
+
+    .blogpost .imgBx{
+        height: 200px;
+    }
+
+    .contact .form-control {
+        height: 40px;
+        border: 1px solid #fafafa80;
+    }
+    .btnD1 {
+        padding:10px 40px;
+        margin-top: 10px;
+    }
+    footer {
+        padding: 0 0 20px;
+    }
+    .sci li {
+        margin: 0 10px;
+        font-size: 1.5rem;
+    }
+    /* .sec2 {
+        height: auto;
+        padding: 40px 0;
+    } */
+
+
+}
+@media (min-width:993px){
+    .contentBoxPosters h1,
+    .headerText h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:1600px){
+
+}

@@ -597,6 +597,79 @@ app.get('/comingsoon', function(req, res){
     })
 });
 
+app.get('/projects', function(req, res){
+    res.render('projects',{
+        isProd,
+        Styles:{
+            css1:"projects.css",
+            css2:"moduleinfo.css",
+            css3:"moduleResponsProjects.css"
+        },
+        hero: "heroprojects",
+    })
+});
+
+app.get('/projects/adstream', function(req, res) {
+    res.render('adstream',{
+        isProd,
+        Styles:{   
+            css1:"streaming.css",
+            css2:"moduleResponsAdstream.css",
+            css3:"moduleResponsProjects.css",
+            css4:"owl.carousel.css",
+            css5:"owl.theme.default.min.css",
+            css7:"moduleLittleCard.css",
+            // css3:"moduleInfo.css",
+            // css6:"moduleCard.css",
+            // css5:"animations.css",
+            // css6:"projects.css", 
+          
+        
+        },
+        Scripts: {
+            js1:"owl.carousel.min.js",
+            js2:"pagetransitions.js",
+            js3:"mainPosters.js",
+            js5:"scrollStream.js"
+        },
+        Posters: {
+            card1:"/kZv92eTc0Gg3mKxqjjDAM73z9cy.jpg",
+            card2:"/xqR4ABkFTFYe8NDJi3knwWX7zfn.jpg",
+            card3:"/dPrUPFcgLfNbmDL8V69vcrTyEfb.jpg",
+            card4:"/3iYQTLGoy7QnjcUYRJy4YrAgGvp.jpg",
+            card5:"/kZMCbp0o46Tsg43omSHNHJKNTx9.jpg",
+            card6:"/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+            card7:"/ttN0czDnCpr64aj3ANGEf3DKE1L.jpg",
+            card8:"/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+            card9:"/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
+            card10:"/bSMSO9xupd4R4vwTPqigHn2quLN.jpg",
+            card11:"/crvO4xm2gs5W0joyKmJf1l1ThZV.jpg",
+            card12:"/86Y6qM8zTn3PFVfCm9J98Ph7JEB.jpg",
+            card13:"/pU3bnutJU91u3b4IeRPQTOP8jhV.jpg",
+            card14:"/wgQ7APnFpf1TuviKHXeEe3KnsTV.jpg",
+            card15:"/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+            card16:"/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+            card17:"/kfZqwGuvEBAysAbCsa0QLKoSYR.jpg",
+            card18:"/eItrj5GcjvCI3oD3bIcz1A2IL9t.jpg",
+            card19:"/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+            card20:"/q3mKnSkzp1doIsCye6ap4KIUAbu.jpg",
+            card21:"/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+            card22:"/5damnMcRFKSjhCirgX3CMa88MBj.jpg",
+            card23:"/6n7ASmQ1wY2cxTubFFGlcvPpyk7.jpg",
+            card24:"/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg",
+            card25:"/dzg8lHS78l5Xxpd2EM5H541Qn2s.jpg",
+            card26:"/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+        },
+        hero: "heroadstream",
+    })
+});
+
+app.get('/projects/beatsy', function(req, res) {
+    res.render('beatsy',{
+        isProd,
+    })
+});
+
 //--NODEMAILER COMING SOON------------->
 app.post('/sendnewsletter', (req, res) => {
     const output = `

@@ -1,0 +1,382 @@
+{{> headerStream }}
+
+
+<!-------------------------------------------------->
+<!------------[ D E S C R I P T I O N ]------------->
+<!-------------------------------------------------->
+   <div class="jumbotron jumbotron-fluid d-block d-lg-none height100p banner" id="intro">
+      <div class="container h100">
+         <div class="contentBox h100">
+            <div>
+               <div>
+                  <h1 
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="0">
+                     Your favorite moments
+                  </h1>
+                  <p
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500">
+                     Watching your favorite movies and series has never been easier. Settled you comfortably and enjoy.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="jumbotron jumbotron-fluid d-none d-lg-block height100p banner banner_phone_large" id="intro_large">
+      <div class="container h100">
+         <div class="contentBox h100">
+            <div>
+               <div>
+                  <h1 
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="0">
+                     Your favorite moments
+                  </h1>
+                  <p
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500">
+                     Watching your favorite movies and series has never been easier. Settled you comfortably and enjoy.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>   
+   </div>
+
+<!------------------------------------------------------>
+<!------------[ D E M O N S T R A T I O N ]------------->
+<!------------------------------------------------------>
+<section class="sec1" id="demo">
+   <div class="container">
+      <div class="row">
+         <div class="offset-sm-2 col-sm-8">
+            <div class="headerText text-center">
+               <h1
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="0">
+                  Simple and fast
+               </h1>
+               <p
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="500">
+                  Don't waste any more time. 
+                  We guarantee access to the video in only 2 clicks. 
+               </p>             
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4">
+            <div class="placeBox" 
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="0">
+               {{> categoryStream }}
+           </div>
+         </div>
+         <div class="col-sm-4">
+            <div class="placeBox"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="500">
+               {{> detailStream }}
+           </div>
+         </div>
+         <div class="col-sm-4 d-block d-md-none">
+            <div class="placeBoxP"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="1000">
+               {{> playerStream }}
+           </div>
+         </div>
+         <div class="col-sm-4 d-none d-md-block">
+            <div class="placeBox"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="1000">
+               {{> playerStream }}
+           </div>
+         </div>
+
+      </div> <!---// ROW-->
+   </div> <!---// CONTAINER-->
+</section>
+
+<!---------------------------------------------->
+<!------------[ C A T A L O G U E ]------------->
+<!---------------------------------------------->
+<section class="sec2" id="solution">
+   <div  class="container h100">
+      <div  class="contentBoxPosters h100">
+         <div>
+            <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0">
+               Currently in our catalogue
+            </h1>
+         </div>
+      </div>
+   </div>
+   <div class="carouselBox">
+      {{> postersMovies }}
+   </div>
+   <div class="container">
+      <div class="contentBox h100 carousel_Content">
+         <div>
+            <P
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0">
+               New content every week. 
+               <br>
+               <span>What are you going to watch tonight?</span>
+            </P>
+            <a href="#" class="btn btnD1"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0">
+               Choose
+            </a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!--------------------------------------->
+<!------------[ P L A Y E R ]------------->
+<!--------------------------------------->
+<section class="blog" id="telecharger">
+   <div  class="container d-flex">
+      <div  class="row">
+         <div  class="offset-sm-2 col-sm-8">
+            <div  class="headerText text-center align-items-center justify-content-center">
+               <h1
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="0">
+                  Unleashed the beast
+               </h1>
+               <p
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="500">
+                  Maximum immersion with more intense images and a Fullscreen reader
+               </p>
+            </div>
+         </div>
+         <div 
+         class="beauty_mobile"
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="0"> 
+                 
+               {{> beautyStream }}
+   
+         </div>
+      </div>
+   </div>
+  
+   {{!-- <div
+   class="beauty_mobile-sm"
+   data-aos="fade-up"
+   data-aos-duration="1000"
+   data-aos-delay="0">
+         {{> beautyStream }}
+   </div> --}}
+ 
+</section>
+
+<!--------------------------------------->
+<!------------[ C O N T A C T ]------------->
+<!--------------------------------------->
+<section class="contact" id="contact">
+   <div  class="container">
+      <div  class="row">
+         <div  class="col-sm-12">
+            <div  class="headerText text-center">
+               <h1
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="0">
+                  Join us
+               </h1>
+               <p
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="500">
+                  Do you have a question? An opinion? Or maybe you would like to contact our support to learn more about our product?
+                  We are available 24 hours a day, 7 days a week. 
+                </p>
+            </div>
+         </div>
+      </div>
+      <div  class="row clearfix">
+         <div  class="offset-sm-2 col-sm-8">
+            <form
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1000">
+               <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" name="" class="form-control">
+               </div>
+               <div  class="form-group">
+                  <label>Email</label>
+                  <input type="mail" name="" class="form-control">
+               </div>
+               <div  class="form-group">
+                  <label>Company</label>
+                  <input type="text" name="" class="form-control">
+               </div>
+               <div  class="form-group">
+                  <label>Phone</label>
+                  <input type="text" name="" class="form-control">
+               </div>
+               <div  class="form-group">
+                  <label>Message</label>
+                  <textarea type="text" name="" class="form-control textarea">
+                  </textarea>
+               </div>
+               <div  class="form-group text-center">
+                  <button class="btn btnD1"> Send</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</section>
+{{> footerStream }}
+    <!----------[ A rajouter!! ]------------->
+               {{!-- <p
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="500">
+                  You have no idea? Don't worry about it. Thanks to our customize category,
+                  there will surely be a film to your taste.
+               </p> --}}
+    <!--------------------------------------->
+
+
+
+
+         <!------------------------------------------>
+         <!--------[ O L D : V E R S I O N ]--------->
+         <!------------------------------------------> 
+
+   {{!-- <div>
+
+      <!----------[ G R A D I E N T ]------------->
+      <div class="block__gradient"></div>
+      <!----------[ B A C K G R O U N D : B L O C K - 1 ]------------->
+      
+
+
+
+         <div class="container body">
+            <div class="row">
+
+               <!------------------------------------------>
+               <!--------[ B L O C K : T I T L E ]--------->
+               <!------------------------------------------>      
+               <div class="col-12 text-center header__title">
+                  <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1554751025/Portfolio%20Adflix/ADFLIXlogoRed.svg" alt=""/>
+               </div>  
+               <div class="col-12 text-center header__title-present">
+                  <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1560804089/Portfolio%20Adflix/presente.svg" alt="">
+               </div>
+               <div class="col-12 text-center pt-2 header__title-original">
+                  <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1560804004/Portfolio%20Adflix/an_originale_project.svg" alt="">
+               </div>
+
+ 
+          
+               <!----------------------------------------------------------->
+               <!-------[ B L O C K - 1 : P R E S E N T A T I O N ]--------->
+               <!----------------------------------------------------------->
+           
+               <div class="col-12 presentation__block-1">   
+                  <div class=" presentation__block-1__title">
+                     <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1560801175/Portfolio%20Adflix/adstream3.svg" alt=""/>
+                  </div>  
+                  <div class="pt-4">            
+                     <div class="col-12 presentation__block-1__text">
+                        <p>L'application de Streaming la plus attendu de 2019. Envie de voir un film ou une série en avant première?</p>
+                     </div>
+                  </div>   
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <h4>Actuellement dans votre catalogue</h4>
+               </div>
+            </div>
+         </div>
+      <!----------[ P O S T E R S - L I S T : M O V I E S ]------------->
+      {{> postersMovies }}
+
+         <div class="presentation__block-1__overview">
+            <div class="presentation__block-1__background">
+               <div class="container presentation__block-1-part-2">
+                  <div class="row">          
+               
+                     <div class="col-12 d-inline-flex presentation__block-1__img-review">
+                        <div class="col-5 presentation__block-1__img">
+                           <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1560774575/Portfolio%20Adflix/Projects/Home_iphone_shadow.png" alt="homeIphone">
+                        </div>
+                        <div class="col-7 pl-4 presentation__block-1__review">
+                           <h3>Plus qu'une application. Une expérience <span>100%</span></h3>
+                           <ul>
+                              <li>Elegante</li>
+                              <li>Accessible</li>
+                              <li>Rapide</li>
+                              <li>Avec du choix!</li>
+                           </ul>
+                        </div>
+                     </div>        
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!----------------------------------------------------------->
+         <!-------[ B L O C K - 2 : P R E S E N T A T I O N ]--------->
+         <!----------------------------------------------------------->
+         <div class="presentation__block-2__overview">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 text-center presentation__block-2__title">
+                     <h2>Un moments de <span>Détente</span></h2>
+                     <p>Une images plus intense, un lecteur Fullscreen</p>
+                  </div>
+
+                  <div class="col-12">
+                     <div class="box__glow">
+
+                           <div class="col-12">
+                              <div class="presentation__block-2__img">
+                                 <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1560874775/Portfolio%20Adflix/Projects/Player_Watch-ultimate_shadow.png" alt="3D">
+                              </div>
+                           </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+     
+
+</div> --}}

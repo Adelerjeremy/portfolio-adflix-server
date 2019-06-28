@@ -1,0 +1,527 @@
+/*--------------*/
+/*---GLOBAL---*/
+/*--------------*/
+* {
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+/*---------------------*/
+/*---[ N A V B A R ]---*/
+/*---------------------*/
+.navbar {
+    transition: 0.5s;
+}
+
+.navbar.scrolled {
+    background: #111111 !important;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-toggler-icon {
+    display: inline-block;
+    width: 35px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZhZmFmYSI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNMCw0MC42OHY5LjA0aDIyNnYtOS4wNHpNMCwxMDguNDh2OS4wNGgyMjZ2LTkuMDR6TTAsMTc2LjI4djkuMDRoMjI2di05LjA0eiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==') 50% 50% no-repeat;
+    background-size: 100%;
+}
+.navbar-light .navbar-toggler {
+    background: none;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #111111;
+    background:#fafafa;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color:#111111;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#fafafa80;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color:#fafafa;
+}
+
+.navbar-light .navbar-brand img,
+.navbar-light .navbar-brand img:hover,
+.navbar-light .navbar-brand img:focus,
+.navbar-light .navbar-brand img:visited {
+
+    width: 12rem;
+  
+}
+
+
+/*---------[ B A N N E R ]--------*/
+.banner{
+    position: relative;
+    top:0;
+    width:100%;
+    height: 100vh;
+    background-color:#111111;
+    background-image:url("https://res.cloudinary.com/dfc5jnbxg/image/upload/v1561109336/Portfolio%20Adflix/Projects/background_hero11.png");
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.banner_phone_large{
+    background-image:url("https://res.cloudinary.com/dfc5jnbxg/image/upload/v1561107028/Portfolio%20Adflix/Projects/background_hero6.png");
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index:50;
+}
+
+
+.banner::before,
+.sec2::before,
+.contact::before {
+    content:"";
+    position: absolute;
+    top:0; 
+    left:0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#111111, transparent);
+    pointer-events: none;
+
+}
+
+.banner::after,
+.sec2::after,
+.contact::after {
+    content:"";
+    position: absolute;
+    bottom:0; 
+    left:0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg,#111111, transparent);
+    pointer-events: none;
+
+}
+
+
+/*---------[ C O N T E N T : I N F O ]--------*/
+.height100p {
+    height: 100vh;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.contentBox {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index:10;
+}
+.contentBoxPosters {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index:10;
+}
+
+
+.contentBox h1, .contentBoxPosters h1 {
+    font-weight: 800;
+    color: #fafafa;
+    text-transform: uppercase;
+    /* font-size: 5rem; */
+}
+
+.contentBox p{
+    color: #dbdbdb;
+    font-size: 1.2rem;
+}
+
+/*------------------------------------------------*/
+/*--------------[ S E C T I O N : 1 ]-------------*/
+/*------------------------------------------------*/
+
+.sec1 {
+    padding: 100px 0;
+    background: #111111;
+}
+
+/*--------------[ T I T L E ]-------------*/
+.headerText h1 {
+    font-size: 2.5rem;
+    color:#fafafa;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/*--------------[ T E X T E ]-------------*/
+.headerText P {
+    color: #dbdbdb;
+    font-size: 1.2rem;
+}
+
+
+/*--------------*/
+/*---CAROUSEL---*/
+/*--------------*/
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
+    visibility: hidden;
+}
+
+.owl-carousel  .mod_long img {
+    height: 100%;
+}
+.owl-carousel .owl-item img{
+    transition: 0.3s;
+}
+/* .owl-carousel .owl-item img:hover {
+    transform: scale(1.05);
+} */
+
+/*--------------[ B O X : I M A G E S ]-------------*/
+.placeBox {
+    position: relative;
+    max-width: 300px;
+    height:400px;
+    margin: 0 auto;
+    background: #111111;
+    margin-top: 30px;
+
+}
+
+.placeBoxP {
+    position: relative;
+    max-width: 400px;
+    height:300px;
+    margin: 0 auto;
+    background: #111111;
+    margin-top: 30px;
+
+}
+
+.placeBox .imgBx, .placeBoxP .imgBx  {
+    width:100%;
+    height:100%;
+
+}
+
+.placeBox .imgBx img, .placeBoxP .imgBx img{
+    object-fit: cover;
+    width:100%;
+    height:100%;   
+}
+
+.placeBox .content, .placeBoxP .content {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+}
+
+.placeBox .content h3, .placeBoxP .content h3 {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    background: rgba(17,17,17,0.8);
+    color: #fafafa;
+    font-size: 20px;
+    font-weight:600;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+.placeBox .content h3 span, .placeBoxP .content h3 span  {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/*------------------------------------------------*/
+/*--------------[ S E C T I O N : 2 ]-------------*/
+/*------------------------------------------------*/
+
+.sec2 {
+    position: relative;
+    background: url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553629862/Portfolio%20Adflix/alien3.jpg');
+    background-size:cover;
+    height:100vh;
+}
+
+.contentBoxPosters h1 {
+    position: relative;
+    top: -250px;
+}
+
+.sec2 .carouselBox {
+    position: relative;
+    top: -750px;
+}
+.sec2 .carousel_Content {
+    position: relative;
+    top: -750px;
+}
+
+.btnD1 {
+    border: 2px solid #fafafa;
+    color: #111111;
+    background: #fafafa;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size:1.15rem;
+    outline: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/*------------------------------------------------------*/
+/*--------------[ S E C T I O N : B L O G ]-------------*/
+/*-----------------------------------------------------*/
+.blog {
+    position: relative;
+    padding: 100px 0;
+    background: #111111;
+    height:100vh;
+}
+
+.blogpost {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;  
+    background: #fafafa;
+}
+
+.blogpost .imgBx {
+    height: 400px;
+}
+
+.blogpost .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*--------------[ S E C T I O N : B E A U T Y ]-------------*/
+/* .beauty_mobile-sm{
+    position: relative;
+    right: 34rem;
+}
+.beauty_mobile-sm_background{   
+    height: 500px;
+}
+
+.beauty_mobile-sm_background img{
+    width: 206%;
+    height: 100%;
+    object-fit: cover;
+} */
+.beauty_mobile_box__img {
+    position: relative;
+    top: -5px;
+    z-index: 10;
+}
+.beauty_mobile_box__img img{
+    position: relative;
+    right: 34rem; 
+    width: 206%;
+    height: 100%;
+}
+.beauty_mobile_box__img_content{
+    position: absolute;
+    top: -5px;
+    z-index: 12;
+}
+.beauty_mobile_box__img_content img {
+    position: relative;
+    top: 26.5px;
+    right: 39px; 
+    width: 83.4%;
+    height: 100%;
+    border-radius: 0 56px 12px 0; 
+}
+
+.beauty_mobile{
+    position: relative;
+    top: 50%;
+    height: 450px;
+    width: 100%;
+    border-radius: 0 10px 10px 0; 
+    background: none; 
+}
+
+/*-------[ A N I M A T I O N ] --------*/
+.beauty_mobile::before,
+.beauty_mobile::after {
+    content:"";
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    border-radius: 50px;
+    background: linear-gradient(35deg,#111111,#1e90ff,#18dcff,#18dcff40,#18dcff20,#18dcff00,#111111,#1e90ff,#18dcff,#18dcff40,#18dcff20,#18dcff00);
+    background-size: 600%;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.beauty_mobile::after{
+    z-index:1;
+    filter: blur(20px);
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        background-position: 0 0;
+        filter: blur(50px);
+     
+    }
+    50%
+    {
+        background-position: 300% 0;
+        filter: blur(100px);
+        z-index:2;
+    }
+    100%
+    {
+        background-position: 0 0;
+        filter: blur(25px);
+    
+    }
+
+}
+
+
+
+.blogpost .content {
+    padding: 15px;  
+}
+
+.blogpost .content h1{
+    margin: 0;
+    padding: 0 0 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.btnD2,
+.btnD2:hover {
+    background:#242424;
+    color: #fafafa;
+    border-radius: 30px;
+    padding: 10px 20px;
+    float: right;  
+}
+
+/*------------------------------------------------------*/
+/*--------------[ S E C T I O N : C O N T A C T ]-------------*/
+/*-----------------------------------------------------*/
+
+.contact {
+    position: relative;
+    padding: 100px 0;
+    background: url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1553630026/Portfolio%20Adflix/posterit.jpg');
+    background-size: cover;
+    min-height:100vh;
+}
+
+.contact form {
+    position: relative;
+    z-index: 100;
+}
+
+.contact .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fafafa21;
+    border-radius: 0;
+    background-color: #11111180;
+    color: #fafafa;
+    font-size: 1.25rem;
+}
+
+.contact .form-control:focus,
+.contact .form-control:hover {
+    border: none;
+    border-bottom: 2px solid #fafafa;
+    box-shadow: none;
+}
+
+.contact .textarea {
+    min-height: 100px;
+}
+.contact label {
+    color: #fafafa;
+    font-size: 1.25rem;
+}
+
+
+/*---------------------------------------------------------*/
+/*--------------[ S E C T I O N : F O O T E R ]-------------*/
+/*-----------------------------------------------------*/
+
+footer {
+    background-color:#111111;
+    padding: 50px 0 0;
+}
+
+.sci {
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.sci li a {
+    color:#fafafa;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.sci li a:hover {
+    color: #fafafa;
+}
+
+.cpryt {
+    margin-top: 20px;
+    text-align: center;
+    color: #c2c2c2de;
+}
+
+.cpryt a,
+.cpryt a:hover{
+    color: #cc0000cc;
+    text-decoration: none;
+}
+

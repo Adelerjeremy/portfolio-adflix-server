@@ -1,0 +1,72 @@
+/*-----------------------------------------------------------*/
+/**--------[ R E S P O N S I V E : A D S T R E A M ]---------*/
+/*-----------------------------------------------------------*/
+@media (min-width: 320px) {
+    .contentBox h1,
+    .contentBoxPosters h1,
+    .sec2 h2 {
+        font-size: 11px; 
+    }
+}
+@media (min-width: 576px) {
+    .banner_phone{
+        
+
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }  
+
+
+}
+
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    } 
+
+    .banner {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+
+    .headerText h2 {
+        font-size: 2rem;
+    }
+
+    .contentBox h1,
+    .sec2 h2 {
+        font-size: 2rem;
+    }
+
+    .blogpost .imgBx{
+        height: 200px;
+    }
+
+    .contact .form-control {
+        height: 40px;
+        border: 1px solid #fafafa80;
+    }
+    .btnD1 {
+        padding:10px 40px;
+        margin-top: 10px;
+    }
+    footer {
+        padding: 0 0 20px;
+    }
+    .sci li {
+        margin: 0 10px;
+        font-size: 1.5rem;
+    }
+
+    .banner_phone_large{
+        position: absolute;
+        left: 200px;
+
+    }
+
+}
