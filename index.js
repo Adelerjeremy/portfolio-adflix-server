@@ -602,7 +602,7 @@ app.get('/projects', function(req, res){
         isProd,
         Styles:{
             css1:"projects.css",
-            css2:"moduleinfo.css",
+            css2:"moduleInfo.css",
             css3:"moduleResponsProjects.css"
         },
         hero: "heroprojects",
