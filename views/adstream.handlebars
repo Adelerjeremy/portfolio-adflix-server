@@ -68,6 +68,7 @@
                data-aos-duration="1000"
                data-aos-delay="500">
                   Don't waste any more time. 
+                  </br>
                   We guarantee access to the video in only 2 clicks. 
                </p>             
             </div>
@@ -115,9 +116,9 @@
 <!------------[ C A T A L O G U E ]------------->
 <!---------------------------------------------->
 <section class="sec2" id="solution">
-   <div  class="container h100">
-      <div  class="contentBoxPosters h100">
-         <div>
+   <div  class="container-fluid h100">
+      <div class="block__posters__content">
+         <div class="contentBoxPosters">
             <h1
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -125,28 +126,33 @@
                Currently in our catalogue
             </h1>
          </div>
-      </div>
-   </div>
-   <div class="carouselBox">
-      {{> postersMovies }}
-   </div>
-   <div class="container">
-      <div class="contentBox h100 carousel_Content">
-         <div>
-            <P
+      
+         <div
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="250">
+               {{> postersMovies }}
+         </div>
+               
+
+         <div  class="contentBox d-flex"> 
+            <div class="row justify-content-center"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="0">
-               New content every week. 
-               <br>
-               <span>What are you going to watch tonight?</span>
-            </P>
-            <a href="#" class="btn btnD1"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="0">
-               Choose
-            </a>
+               <div class="col-12">
+                  <P>
+                     New content every week. 
+                     <br>
+                     <span>What are you going to watch tonight?</span>
+                  </P>  
+               </div>
+               <div class="col-12">
+                  <a href="#" class="btn btnD1">
+                     Choose
+                  </a>
+               </div>
+            </div>     
          </div>
       </div>
    </div>
@@ -155,7 +161,85 @@
 <!--------------------------------------->
 <!------------[ P L A Y E R ]------------->
 <!--------------------------------------->
+
+
 <section class="blog" id="telecharger">
+   <div  class="container-fluid h100 d-block d-xl-none">
+      <div  class="headerText player__title-block text-center align-items-center justify-content-end">
+         <h1
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="0">
+            Unleashed the beast
+         </h1>
+         <p
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="500">
+            Maximum immersion with more intense images and a Fullscreen reader
+         </p>
+      </div>
+      <div class="contentBox h75">
+         <div
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="0"> 
+                  
+            {{> beautyStream}}
+
+         </div>
+      </div>
+ 
+         <div class="row">
+            {{!-- <div class="col-12 headerText text-center"> 
+               <p>Available soon on your favorite Store</p>
+            </div> --}}
+            <div 
+            class="col-12 d-inline-flex dll"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0">
+               <div class="col-6">
+               <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1561815229/Portfolio%20Adflix/Projects/PlayStoreLite.png" alt="">
+               </div>
+               <div class="col-6">
+               <img src="https://res.cloudinary.com/dfc5jnbxg/image/upload/v1561815229/Portfolio%20Adflix/Projects/AppStoreLite.png" alt="">
+               </div>
+            </div>
+         </div>
+      
+   </div>
+   <div  class="container-fluid h100 d-none d-xl-block">
+      <div  class="headerText text-center align-items-center justify-content-center">
+         <h1
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="0">
+            Unleashed the beast
+         </h1>
+         <p
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="500">
+            Maximum immersion with more intense images and a Fullscreen reader
+         </p>
+      </div>
+      <div class="contentBox h100">
+         {{!-- <div
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="0"> 
+                  
+            {{> beautyStream}}
+
+         </div> --}}
+      </div>
+   </div>
+
+</section>
+
+
+{{!-- <section class="blog" id="telecharger">
    <div  class="container d-flex">
       <div  class="row">
          <div  class="offset-sm-2 col-sm-8">
@@ -184,16 +268,7 @@
    
          </div>
       </div>
-   </div>
-  
-   {{!-- <div
-   class="beauty_mobile-sm"
-   data-aos="fade-up"
-   data-aos-duration="1000"
-   data-aos-delay="0">
-         {{> beautyStream }}
    </div> --}}
- 
 </section>
 
 <!--------------------------------------->

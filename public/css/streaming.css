@@ -127,6 +127,9 @@ p {
 .h100 {
     height: 100%;
 }
+.h75 {
+    height: 75%;
+}
 
 .contentBox {
     position: relative;
@@ -152,7 +155,9 @@ p {
     text-transform: uppercase;
     /* font-size: 5rem; */
 }
-
+.player__title-block {
+    padding-top:4rem;
+}
 .contentBox p{
     color: #dbdbdb;
     font-size: 1.2rem;
@@ -173,6 +178,9 @@ p {
     color:#fafafa;
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+.headerText h4 {
+    color:#fafafa;
 }
 
 /*--------------[ T E X T E ]-------------*/
@@ -195,6 +203,7 @@ p {
 .owl-carousel .owl-item img{
     transition: 0.3s;
 }
+
 /* .owl-carousel .owl-item img:hover {
     transform: scale(1.05);
 } */
@@ -273,7 +282,16 @@ p {
     height:100vh;
 }
 
-.contentBoxPosters h1 {
+.block__posters__content{
+  
+   position: relative;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+
+}
+
+/* .contentBoxPosters h1 {
     position: relative;
     top: -250px;
 }
@@ -285,7 +303,7 @@ p {
 .sec2 .carousel_Content {
     position: relative;
     top: -750px;
-}
+} */
 
 .btnD1 {
     border: 2px solid #fafafa;
@@ -297,6 +315,7 @@ p {
     outline: none;
     font-weight: 500;
     margin-top: 20px;
+    z-index:5;
 }
 
 /*------------------------------------------------------*/
@@ -308,6 +327,7 @@ p {
     background: #111111;
     height:100vh;
 }
+
 
 .blogpost {
     position: relative;
@@ -325,6 +345,9 @@ p {
     height: 100%;
     object-fit: cover;
 }
+.dll img{
+    width: 100%;
+}
 /*--------------[ S E C T I O N : B E A U T Y ]-------------*/
 /* .beauty_mobile-sm{
     position: relative;
@@ -339,7 +362,7 @@ p {
     height: 100%;
     object-fit: cover;
 } */
-.beauty_mobile_box__img {
+/* .beauty_mobile_box__img {
     position: relative;
     top: -5px;
     z-index: 10;
@@ -362,15 +385,39 @@ p {
     width: 83.4%;
     height: 100%;
     border-radius: 0 56px 12px 0; 
+} */
+
+/*------------------------------------------------------------*/
+.beauty_mobile_box__img{
+    position: relative;
+    right: 16rem;
+}
+.beauty_mobile_box__img img{
+    width:800px;
+    z-index: 20;
 }
 
+
+.beauty_mobile_box__img_content{
+    position: absolute;
+    top: 1.4rem;
+    left: 25.4rem;
+
+}
+.beauty_mobile_box__img_content img {
+    width: 20rem;
+    height: 100%;
+    border-radius: 0 56px 12px 0; 
+    z-index: 12;
+} 
+
 .beauty_mobile{
-    position: relative;
-    top: 50%;
-    height: 450px;
-    width: 100%;
+    /* position: relative; */
+    width:800px;
+    height:100%;
     border-radius: 0 10px 10px 0; 
     background: none; 
+
 }
 
 /*-------[ A N I M A T I O N ] --------*/
@@ -381,7 +428,7 @@ p {
     top:-2px;
     left:-2px;
     border-radius: 50px;
-    background: linear-gradient(35deg,#111111,#1e90ff,#18dcff,#18dcff40,#18dcff20,#18dcff00,#111111,#1e90ff,#18dcff,#18dcff40,#18dcff20,#18dcff00);
+    background: linear-gradient(35deg,#111111,#18dcff,#18dcff60,transparent,transparent,#18dcff40,#18dcff20,#18dcff10,#18dcff00,#111111,#18dcff,#18dcff60,transparent,transparent,#18dcff40,#18dcff20,#18dcff10,#18dcff00);
     background-size: 600%;
     width: calc(100% + 8px);
     height: calc(100% + 8px);
@@ -390,7 +437,7 @@ p {
 }
 
 .beauty_mobile::after{
-    z-index:1;
+    /* z-index:1; */
     filter: blur(20px);
 }
 
@@ -404,9 +451,9 @@ p {
     }
     50%
     {
-        background-position: 300% 0;
+        background-position: 150% 0;
         filter: blur(100px);
-        z-index:2;
+        /* z-index:2; */
     }
     100%
     {
