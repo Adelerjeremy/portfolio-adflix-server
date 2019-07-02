@@ -155,9 +155,10 @@ p {
     text-transform: uppercase;
     /* font-size: 5rem; */
 }
-.player__title-block {
-    padding-top:4rem;
+.contentBox h2 {
+    color: #fafafa;
 }
+
 .contentBox p{
     color: #dbdbdb;
     font-size: 1.2rem;
@@ -291,19 +292,9 @@ p {
 
 }
 
-/* .contentBoxPosters h1 {
-    position: relative;
-    top: -250px;
+.sec2__text-bottom{
+    z-index:999;
 }
-
-.sec2 .carouselBox {
-    position: relative;
-    top: -750px;
-}
-.sec2 .carousel_Content {
-    position: relative;
-    top: -750px;
-} */
 
 .btnD1 {
     border: 2px solid #fafafa;
@@ -345,6 +336,26 @@ p {
     height: 100%;
     object-fit: cover;
 }
+.player__background-xl{
+    background-image:linear-gradient(#111111fa,transparent, #111111fa),url('https://res.cloudinary.com/dfc5jnbxg/image/upload/v1562062184/Portfolio%20Adflix/Projects/sea.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    /* height:100vh; */
+    z-index: 1;
+}
+.player__bottom-title{
+    align-self: flex-end;
+    top:220px;
+}
+.player__bottom-title h2 span{
+    color: #18dcff60;
+    text-transform: uppercase;
+}
+.player__title-block {
+    padding-top:4rem;
+}
+
 .dll img{
     width: 100%;
 }
