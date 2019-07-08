@@ -665,10 +665,14 @@ app.get('/projects/adstream', function(req, res) {
 });
 
 app.get('/projects/beatsy', function(req, res) {
-    res.render('beatsy',{
+    res.render('loading',{
         isProd,
+        Styles: {
+            css1:"loadAnim.css"
+        },
     })
 });
+
 
 //--NODEMAILER COMING SOON------------->
 app.post('/sendnewsletter', (req, res) => {
